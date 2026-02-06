@@ -450,3 +450,11 @@ print(f"MAE: {mean_error} ms, STD: {std_error} ms")
 *   `shared/prisma-checklist.md`: Full 27-item PRISMA 2020 checklist.
 *   `shared/grade-framework.md`: Guide to GRADE evidence quality assessment.
 *   `shared/statistical-methods.md`: Code snippets for Bland-Altman, T-tests, and Bootstrap CI.
+
+
+### Cross-References to New Skills
+
+*   [Clinical Indices](../clinical-indices/SKILL.md): Composite index validation examples (HeartLogic, NOL)
+*   [Device Selection](../device-selection/SKILL.md): Sensor validation metrics and analytical validation  
+*   [Device Comparison Matrix](../shared/device-comparison-matrix.md): Validation metrics across devices
+*   [Multi-Sensor Fusion Methodology](../shared/multi-sensor-fusion-methodology.md): Validation strategies for multi-sensor systems

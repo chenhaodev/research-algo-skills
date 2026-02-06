@@ -141,6 +141,8 @@ This phase translates the concept into a technical specification, selecting the 
 ### 2.1 Sensor & Device Selection
 Select hardware that can capture the signal with sufficient fidelity and patient compliance.
 
+> **For detailed device selection guidance**, see [Device Selection Skill](../device-selection/SKILL.md) and the [Device Comparison Matrix](../shared/device-comparison-matrix.md).
+
 **Selection Criteria:**
 1.  **Form Factor**: Wrist, chest patch, ring, ambient sensor, phone.
     *   *Constraint*: Must be wearable for the required duration (e.g., 24/7 vs. nightly).
@@ -198,6 +200,8 @@ This phase focuses on gaining regulatory acceptance for the measure as a drug de
 
 ### 3.1 Regulatory Pathway Selection
 Determine if the measure is a **Clinical Outcome Assessment (COA)** or a **Biomarker**.
+
+> **For Digital Therapeutics (DTx) regulatory pathways**, see [DTx Development Skill](../dtx-development/SKILL.md) and [DTx Regulatory Pathways Comparison](../shared/dtx-regulatory-pathways.md).
 
 **Classification Guide:**
 *   **COA**: Measures how a patient feels, functions, or survives.
@@ -303,6 +307,9 @@ This example illustrates the full lifecycle of a digital measure for Atopic Derm
 ### Internal References
 *   `../shared/fda-endpoint-criteria.md`: Checklist for FDA endpoint acceptance.
 *   `../shared/picos-template.md`: Template for defining Population, Intervention, Comparator, Outcome, Study design.
+*   `../shared/device-comparison-matrix.md`: Comparison of wearable sensors and biosensors for digital measures.
+*   `../shared/multi-sensor-fusion-methodology.md`: Approaches for combining multiple physiological signals.
+*   `../dtx-development/SKILL.md`: Digital therapeutics development and regulatory pathways (DiGA, FDA PDT).
 *   `references/phase1-concept-relevance.md`: Detailed guide for Phase 1 (Ontology, Interviews).
 *   `references/phase2-measurement-approach.md`: Detailed guide for Phase 2 (Sensors, Validation).
 *   `references/phase3-regulatory-engagement.md`: Detailed guide for Phase 3 (CPIM, Qualification).

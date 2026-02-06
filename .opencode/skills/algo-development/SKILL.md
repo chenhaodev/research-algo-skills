@@ -75,6 +75,8 @@ Apply these filters to ensure quality and relevance:
 
 The goal is to find robust, maintained open-source implementations to accelerate development.
 
+> **Note**: Before algorithm selection, verify hardware feasibility using the [Device Selection Skill](../device-selection/SKILL.md). For multi-sensor fusion approaches, see [Clinical Indices Skill](../clinical-indices/SKILL.md).
+
 #### 1. Search Platforms
 *   **Code Repositories:** GitHub, GitLab.
 *   **Package Managers:**
@@ -235,6 +237,10 @@ Use this checklist to validate the final design or evaluate a completed study. B
 *   `data-science`: For general data manipulation and exploration.
 *   `python-dev`: For implementation details.
 *   `clinical-validation`: For deeper dive into trial design.
+*   [Device Selection](../device-selection/SKILL.md): For sensor/hardware selection before algorithm development.
+*   [Clinical Indices](../clinical-indices/SKILL.md): For composite biomarker and multi-sensor fusion methodologies.
+*   [Device Comparison Matrix](../shared/device-comparison-matrix.md): Hardware specifications and validation metrics.
+*   [Multi-Sensor Fusion Methodology](../shared/multi-sensor-fusion-methodology.md): Approaches for combining multiple physiological signals.
 
 ## References & Further Reading
 *   [academic-research-strategy.md](./references/academic-research-strategy.md)
