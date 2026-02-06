@@ -52,6 +52,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-02-06
+
+### Added
+- ✨ 4 new domain-specific skills for digital health workflows:
+  - **device-selection**: Wearable sensor and platform selection with validation criteria (Empatica E4/EmbracePlus, LifeQ platform examples)
+  - **dtx-development**: Digital therapeutics regulatory pathways (DiGA Germany, FDA PDT) with Pear reSET case study (n=399 RCT, 40.3% vs 17.6% abstinence)
+  - **clinical-indices**: Multi-sensor fusion and composite biomarker methodologies (HeartLogic CHF: 70% sensitivity, 34-day early warning; NOL Pain: AUC 0.93)
+  - **rpm-platform**: Remote patient monitoring architecture and integration (VitalConnect, GE EK-Pro, Closedloop visualization patterns)
+
+- 📚 12 new reference files:
+  - Device selection: `wearable-sensors.md`, `platform-biomarkers.md`, `sensor-evaluation-criteria.md`
+  - DTx development: `diga-pathway-germany.md`, `example-pear-reset.md`
+  - Clinical indices: `heartlogic-chf-index.md`, `nol-pain-index.md`
+  - RPM platform: `vitalconnect-rpm-architecture.md`
+  - 4 additional supporting references
+
+- 🔗 4 shared resources for cross-skill integration:
+  - `device-comparison-matrix.md`: Quick reference for sensor specifications
+  - `dtx-regulatory-pathways.md`: DiGA vs FDA pathway comparison (timeline, evidence, reimbursement)
+  - `visualization-best-practices.md`: Closedloop patterns (baseball cards, traffic lights, progressive disclosure)
+  - `multi-sensor-fusion-methodology.md`: HeartLogic/NOL multi-sensor approaches
+
+- 🧪 20 QA scenarios demonstrating real-world applications:
+  - 5 scenarios per new skill (device-selection, dtx-development, clinical-indices, rpm-platform)
+  - Each scenario includes: user request, expected workflow (5 steps), expected recommendation, verification checklist
+  - Coverage: clinical use cases, regulatory pathways, cost-benefit analysis, platform integration, HIPAA compliance
+
+### Enhanced
+- 🔄 Existing skills now cross-reference new domain expertise:
+  - `research-strategy`: Links to device-selection and dtx-development for sensor/regulatory planning
+  - `algo-development`: Links to device-selection and clinical-indices for hardware feasibility and fusion methodologies
+  - `review-validation`: Cross-reference section added (currently minimal, expandable in future)
+
+### Quality Metrics (v1.1.0)
+- **7 total skills** (3 core methodology + 4 domain-specific)
+- **26 reference files** (14 original + 12 new)
+- **12 shared resources** (8 original + 4 new)
+- **20 QA scenarios** (new: 5 per domain skill)
+- **3,294+ lines of new content** across 28 files
+- **100% cross-reference coverage** between related skills
+
+---
+
 ## [Unreleased]
 
 ### Planned

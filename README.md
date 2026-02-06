@@ -15,10 +15,18 @@
 
 The **Research & Algorithm Development Skills** repository transforms complex Standard Operating Procedures (SOPs) into interactive, AI-driven capabilities. Designed for the **OpenCode** ecosystem and optimized for **Qwen-Pro**, this collection empowers researchers, data scientists, and clinical leads to execute rigorous scientific workflows with speed and precision.
 
-This repository encapsulates three core skills derived from industry-standard SOPs:
+This repository encapsulates **seven specialized skills** derived from industry-standard SOPs:
+
+**Core Skills (Methodology):**
 1.  **Research Strategy (`research-strategy`)**: From concept to study design.
 2.  **Algorithm Development (`algo-development`)**: Technical feasibility, selection, and implementation.
 3.  **Review & Validation (`review-validation`)**: Systematic reviews and clinical validation protocols.
+
+**Domain-Specific Skills:**
+4.  **Device Selection (`device-selection`)**: Wearable sensor and platform selection for clinical studies.
+5.  **DTx Development (`dtx-development`)**: Digital therapeutics regulatory pathways (DiGA/FDA).
+6.  **Clinical Indices (`clinical-indices`)**: Multi-sensor fusion and composite biomarker methodologies.
+7.  **RPM Platform (`rpm-platform`)**: Remote patient monitoring architecture and integration.
 
 ### What Problems Does This Solve?
 *   **Complexity Overload**: Navigating FDA guidance, PRISMA checklists, and technical feasibility studies is overwhelming. These skills break them down into step-by-step interactive guides.
@@ -49,10 +57,10 @@ Built on the foundation of rigorous scientific standards:
 *   **PICOS Framework**: For defining research questions.
 
 ### 📦 Comprehensive Coverage
-*   **3 Core Skills** covering 6 distinct SOPs.
-*   **14 Reference Files** containing detailed methodologies and checklists.
-*   **8 Shared Resources** including standard templates and scoring matrices.
-*   **Interactive Questionnaires** to guide user input.
+*   **7 Specialized Skills** covering 12 distinct domain areas.
+*   **26 Reference Files** containing detailed methodologies, case studies, and checklists.
+*   **12 Shared Resources** including device comparison matrices, regulatory pathway guides, and visualization best practices.
+*   **20 QA Scenarios** demonstrating real-world applications with expected workflows and verification criteria.
 
 ---
 
@@ -97,7 +105,7 @@ Run the following command to ensure OpenCode recognizes the new skills:
 ```bash
 opencode list-skills
 ```
-*You should see `research-strategy`, `algo-development`, and `review-validation` in the list.*
+*You should see 7 skills: `research-strategy`, `algo-development`, `review-validation`, `device-selection`, `dtx-development`, `clinical-indices`, and `rpm-platform` in the list.*
 
 ---
 
@@ -158,28 +166,39 @@ research-algo-skills/
 ├── .gitignore                  # Git ignore rules
 ├── .opencode/
 │   └── skills/
-│       ├── research-strategy/
-│       │   ├── SKILL.md        # Main prompt logic for Research Strategy
-│       │   ├── references/     # SOP PDFs and guides
-│       │   │   ├── SOP-R-1_Project_Strategy.md
-│       │   │   └── ...
-│       │   └── assets/         # Diagrams and flowcharts
-│       ├── algo-development/
-│       │   ├── SKILL.md        # Main prompt logic for Algo Dev
-│       │   ├── references/     # Technical feasibility guides
-│       │   │   ├── SOP-R-3_Technique_Develop_Plan.md
-│       │   │   └── ...
+│       ├── research-strategy/  # Core: Study design & planning
+│       │   ├── SKILL.md        # Main prompt logic
+│       │   ├── references/     # SOP-R-1 guides
+│       │   └── assets/         # QA scenarios
+│       ├── algo-development/   # Core: Algorithm selection
+│       │   ├── SKILL.md
+│       │   ├── references/     # SOP-R-3 technical guides
 │       │   └── assets/
-│       ├── review-validation/
-│       │   ├── SKILL.md        # Main prompt logic for Validation
-│       │   ├── references/     # Validation protocols & PRISMA
-│       │   │   ├── SOP-R-4_Validation_Protocol.md
-│       │   │   └── ...
+│       ├── review-validation/  # Core: Validation protocols
+│       │   ├── SKILL.md
+│       │   ├── references/     # SOP-R-4, PRISMA
 │       │   └── assets/
-│       └── shared/             # Common resources
-│           ├── questionnaires/ # Intake forms
-│           ├── templates/      # Document templates
-│           └── standards/      # PRISMA, GRADE, FDA summaries
+│       ├── device-selection/   # Domain: Wearable sensor selection
+│       │   ├── SKILL.md
+│       │   ├── references/     # Sensor evaluation criteria
+│       │   └── assets/         # QA scenarios (5 scenarios)
+│       ├── dtx-development/    # Domain: Digital therapeutics
+│       │   ├── SKILL.md
+│       │   ├── references/     # DiGA/FDA pathways, Pear reSET case
+│       │   └── assets/         # QA scenarios (5 scenarios)
+│       ├── clinical-indices/   # Domain: Multi-sensor fusion
+│       │   ├── SKILL.md
+│       │   ├── references/     # HeartLogic CHF, NOL Pain examples
+│       │   └── assets/         # QA scenarios (5 scenarios)
+│       ├── rpm-platform/       # Domain: Remote monitoring
+│       │   ├── SKILL.md
+│       │   ├── references/     # VitalConnect architecture
+│       │   └── assets/         # QA scenarios (5 scenarios)
+│       └── shared/             # Cross-skill resources
+│           ├── device-comparison-matrix.md
+│           ├── dtx-regulatory-pathways.md
+│           ├── visualization-best-practices.md
+│           └── multi-sensor-fusion-methodology.md
 └── examples/                   # Example outputs and case studies
     ├── example_research_plan.md
     ├── example_validation_protocol.md
@@ -350,6 +369,13 @@ This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LI
 ## 📜 Version History
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
+
+*   **v1.1.0** (2026-02-06): Domain-specific skills expansion.
+    *   Added 4 new domain-specific skills: `device-selection`, `dtx-development`, `clinical-indices`, `rpm-platform`.
+    *   Created 12 new reference files with clinical examples (HeartLogic CHF, NOL Pain, Pear reSET).
+    *   Added 4 shared resources for cross-skill reference (device matrix, regulatory pathways, visualization patterns, fusion methodology).
+    *   Developed 20 QA scenarios (5 per new skill) demonstrating real-world workflows.
+    *   Enhanced existing skills with cross-references to new domain expertise.
 
 *   **v1.0.0** (2026-02-02): Initial release.
     *   Added `research-strategy` skill.
